@@ -12,5 +12,11 @@ int main()
   cout<<"sum of vector elements:"<< sum <<endl;
 
   cout<<endl;
+//sort elements in desending order
+ sort(v1.begin(),v1.end(),greater<int>());
+ cout<<"v1: {";
+for_each(begin(v1), end(v1), [](const auto& x){cout<<x<<"";});
+cout<<"}"<<endl;
+
   return 0;
 }
